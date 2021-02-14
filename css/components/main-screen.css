@@ -1,0 +1,31 @@
+.main-screen {
+    height: 100%;
+    width: 100%;
+    background-color: var(--sand-color);
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.main-screen header {
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+}
+.main-screen main {
+    margin-top: 10px;
+}
+.main-screen > div {
+    margin-bottom: 10px;
+}
+.main-screen__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.main-screen__header__title {
+    font-weight: 600;
+    font-size: 25px;
+}

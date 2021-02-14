@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="login-background">
+        <div class="status-bar">
+            <div class="status-bar__connection-info">
+                <i class="fas fa-wifi"></i>
+                <span>KT</span>
+            </div>
+            <span class="status-bar__time">06:19</span>
+            <div class="status-bar__battery-info">
+                <span>100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="login-wrapper">
+            <header class="welcome-header">
+                <h1>Welcome To BeachTalk</h1>
+                <h3>
+                    If you have a BeachTalk Account,<br />log in with your email
+                    address.
+                </h3>
+            </header>
+            <form class="login-form" method="POST" action="./friends.html">
+                <input
+                    class="login-form__input"
+                    type="email"
+                    required
+                    placeholder="Email Address"
+                />
+                <input
+                    class="login-form__input"
+                    type="password"
+                    required
+                    placeholder="Password"
+                />
+                <input class="login-form__btn" type="submit" value="Sign In" />
+            </form>
+        </div>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    </body>
+</html>

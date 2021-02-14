@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+@import "./reset.css";
+/* Components */
+@import "./components/user-component.css";
+@import "./components/status-bar.css";
+@import "./components/nav-bar.css";
+@import "./components/search-bar.css";
+@import "./components/main-screen.css";
+/* Screens */
+@import "./screens/friends.css";
+@import "./screens/login.css";
+
+:root {
+    --sea-color: #39e3f0;
+    --sand-color: #fbd997;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 20px;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.login-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

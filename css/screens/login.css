@@ -1,0 +1,44 @@
+.login-background {
+    background-image: url("../../img/login-background3.jpg");
+    background-size: 1200px auto;
+    background-position-x: center;
+}
+
+.welcome-header {
+    margin-top: 85px;
+    font-size: 30px;
+    text-align: center;
+}
+.welcome-header h3 {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.login-form {
+    margin: 60px 0px;
+    height: 160px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form__input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+.login-form input:focus {
+    outline: none;
+}
+.login-form__btn {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #40a6ab7a;
+    cursor: pointer;
+}

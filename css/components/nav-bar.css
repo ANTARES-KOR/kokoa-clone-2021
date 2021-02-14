@@ -1,0 +1,31 @@
+.nav-bar {
+    width: 100px;
+    height: 100%;
+    background-color: var(--sea-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.nav-bar__upper-icons {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar__under-icons {
+    padding-bottom: 70px;
+}
+
+.menu {
+    color: rgba(255, 255, 255, 0.4);
+}
+.menu:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+.selected-menu {
+    color: white;
+}
