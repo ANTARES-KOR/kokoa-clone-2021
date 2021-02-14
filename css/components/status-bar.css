@@ -3,7 +3,8 @@
     height: 30px;
     padding: 0px 5px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     top: 0px;
 
     display: flex;

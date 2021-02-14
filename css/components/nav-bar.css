@@ -1,12 +1,13 @@
 .nav-bar {
-    width: 100px;
-    height: 100%;
+    height: 100vh;
+    width: 20vw;
     background-color: var(--sea-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 70px;
+    position: fixed;
 }
 
 .nav-bar__upper-icons {
