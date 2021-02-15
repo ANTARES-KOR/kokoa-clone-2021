@@ -1,13 +1,14 @@
 .nav-bar {
     height: 100vh;
     width: 20vw;
-    background-color: var(--sea-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 70px;
     position: fixed;
+    background-image: url("../../img/nav-bar-back2.jpg");
+    background-size: 900px;
 }
 
 .nav-bar__upper-icons {

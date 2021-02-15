@@ -7,9 +7,12 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20vw;
+    background-image: url("../../img/login-form-background2.jpg");
+    background-size: 1200px auto;
+    background-position-x: 53%;
 }
 .main-screen header {
-    background-color: var(--sand-color);
+    background-color: transparent;
     display: flex;
     height: 120px;
     width: 80vw;

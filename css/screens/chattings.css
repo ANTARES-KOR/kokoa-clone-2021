@@ -1,9 +1,11 @@
 .chatting-screen {
-    background-color: var(--sand-color);
     width: 100%;
-    height: 300vh;
+    height: 150vh;
     padding: 30px 10px;
     padding-top: 80px;
+    background-image: url("../../img/beach-832346_1920.jpg");
+    background-size: 700px auto;
+    background-position: center;
 }
 .chatting-screen__header {
     display: flex;
@@ -15,7 +17,7 @@
     padding-top: 20px;
     height: 80px;
     width: 100vw;
-    background-color: var(--sand-color);
+    background-color: transparent;
     z-index: 10;
 }
 .chatting-screen__title {
@@ -46,7 +48,7 @@
     }
 }
 .chatting-screen__main {
-    height: 200vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,6 +165,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
+    background-color: var(--sand-color);
 }
 .reply__column {
     text-align: center;
@@ -183,6 +186,7 @@
     border-radius: 17px;
     padding: 0px 17px;
     transition: all 0.3s ease-in-out;
+    background-color: var(--light-sand-color);
 }
 
 .reply__column > i {

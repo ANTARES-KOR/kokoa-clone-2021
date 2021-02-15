@@ -8,6 +8,7 @@
 @import "./components/nav-bar.css";
 @import "./components/search-bar.css";
 @import "./components/main-screen.css";
+@import "./components/no-pc.css";
 /* Screens */
 @import "./screens/friends.css";
 @import "./screens/login.css";
@@ -47,23 +48,33 @@ body {
 }
 @keyframes hideSplashScreen {
     0% {
+        transform: translateX(-700px);
         opacity: 1;
     }
+    35% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    70% {
+        opacity: 0.7;
+        transform: translateX(-700px);
+    }
     100% {
+        transform: translateX(-700px);
         opacity: 0;
         visibility: hidden;
     }
 }
 
 #splash-screen {
-    background-image: url("../img/login-fom-background1.jpg");
-    background-size: auto 150vh;
+    background-image: url("../img/nav-bar-back2.jpg");
+    background-size: 1000px 100vh;
     background-position-y: center;
     position: absolute;
     height: 100vh;
     width: 100vw;
     z-index: 200;
     top: 0;
-    animation: hideSplashScreen 0.5s ease-in-out forwards;
-    animation-delay: 0.5s;
+    animation: hideSplashScreen 3s ease-in-out forwards;
+    opacity: 1;
 }
