@@ -21,9 +21,28 @@
     position: fixed;
     top: 0px;
     left: 20vw;
+    z-index: 10;
+}
+@keyframes rotateCog {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.main-screen__header .fa-cog:hover {
+    animation: rotateCog 2s linear infinite;
+}
+
+.main-screen__header .fa-plus {
+    position: absolute;
+    right: 8px;
+    top: 37px;
 }
 .main-screen main {
     margin-top: 90px;
+    min-height: 80vh;
 }
 .main-screen > div {
     margin-bottom: 10px;
@@ -32,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
+    padding-right: 10px;
 }
 .main-screen__header__title {
     font-weight: 600;

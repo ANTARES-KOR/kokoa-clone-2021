@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chats</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__connection-info">
+                <i class="fas fa-wifi"></i>
+                <span>KT</span>
+            </div>
+            <span class="status-bar__time">06:19</span>
+            <div class="status-bar__battery-info">
+                <span>100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="wrapper">
+            <nav class="nav-bar">
+                <div class="nav-bar__upper-icons">
+                    <a href="./friends.html"
+                        ><i class="fas fa-user fa-2x menu"></i
+                    ></a>
+                    <a href="./chats.html"
+                        ><i class="fas fa-comment menu fa-2x selected-menu"></i
+                    ></a>
+                    <div class="notification notification-chat">
+                        <span>1</span>
+                    </div>
+                    <a href="./find.html"
+                        ><i class="fas fa-hashtag menu fa-2x"></i
+                    ></a>
+                </div>
+                <div class="nav-bar__under-icons">
+                    <a href="./more.html"
+                        ><i class="fas fa-ellipsis-h menu fa-2x"></i
+                    ></a>
+                    <div
+                        class="notification notification-mini notification-more"
+                    ></div>
+                </div>
+            </nav>
+            <div class="main-screen">
+                <header>
+                    <div class="main-screen__header">
+                        <h2 class="main-screen__header__title">Chat</h2>
+                        <i class="fas fa-comment fa-lg"></i>
+                        <i class="fas fa-plus fa-xs"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="fas fa-search fs-xs"></i>
+                        <input
+                            type="text"
+                            placeholder="Search chat name, participants."
+                        />
+                    </div>
+                </header>
+                <main>
+                    <a href="./chattings/pengsu.html">
+                        <div class="user-profile">
+                            <img
+                                class="user-profile__icon"
+                                src="https://newsimg.sedaily.com/2020/09/24/1Z7ZAQ1IWV_1.jpg"
+                            />
+                            <div class="user-profile__Info">
+                                <span class="user-profile__Info__name"
+                                    >펭수</span
+                                >
+                                <span class="user-profile__Info__comment"
+                                    >;;</span
+                                >
+                            </div>
+                            <span class="user-profile__time">21:32</span>
+                        </div>
+                    </a>
+                    <a href="./chattings/seungwoo.html">
+                        <div class="user-profile">
+                            <img
+                                class="user-profile__icon"
+                                src="https://yt3.ggpht.com/ytc/AAUvwni7qAxM0pXCJA8C0qQO6RofS_cKMzEGAuisvXlSGA=s900-c-k-c0x00ffffff-no-rj"
+                            />
+                            <div class="user-profile__Info">
+                                <span class="user-profile__Info__name"
+                                    >승우아빠</span
+                                >
+                                <span class="user-profile__Info__comment"
+                                    >이번에 저희 유튜브 영상에 출연해주실 수
+                                    있나요?</span
+                                >
+                            </div>
+                            <span class="user-profile__time">13:30</span>
+                            <div class="notification notification-chatting">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </a>
+                </main>
+            </div>
+        </div>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    </body>
+</html>

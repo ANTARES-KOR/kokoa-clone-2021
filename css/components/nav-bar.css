@@ -30,3 +30,48 @@
 .selected-menu {
     color: white;
 }
+
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(90deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.notification {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: tomato;
+    animation: notificationAnimation 1s ease-in-out infinite;
+}
+.notification-mini {
+    width: 8px;
+    height: 8px;
+    animation: none;
+}
+.notification-chat {
+    top: 120px;
+    left: 11vw;
+}
+.notification-more {
+    bottom: 95px;
+    left: 13vw;
+}
+.notification-chatting {
+    right: 5px;
+    bottom: 5px;
+    animation: none;
+}

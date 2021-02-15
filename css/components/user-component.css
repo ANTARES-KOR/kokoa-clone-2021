@@ -4,6 +4,10 @@
     align-items: center;
     height: 45px;
     margin: 10px 0px;
+    position: relative;
+}
+.user-profile:hover {
+    outline: 2px solid rgb(240, 201, 128);
 }
 .user-profile-xl {
     height: 50px;
@@ -30,4 +34,16 @@
 
 .user-profile__Info__name {
     font-weight: 600;
+}
+.user-profile__Info__comment {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-profile__time {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    font-size: 13px;
+    color: gray;
 }

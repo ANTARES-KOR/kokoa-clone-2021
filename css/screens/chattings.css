@@ -1,0 +1,229 @@
+.chatting-screen {
+    background-color: var(--sand-color);
+    width: 100%;
+    height: 300vh;
+    padding: 30px 10px;
+    padding-top: 80px;
+}
+.chatting-screen__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: fixed;
+    padding: 0px 10px;
+    padding-top: 20px;
+    height: 80px;
+    width: 100vw;
+    background-color: var(--sand-color);
+    z-index: 10;
+}
+.chatting-screen__title {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+}
+.chatting-screen__header div:last-child {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+.chatting-screen__main {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s linear forwards;
+}
+
+.timestamp {
+    text-align: center;
+    width: 110px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 15px;
+    background-color: rgb(204, 190, 163);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.message-row > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message__author {
+    display: block;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.message__container {
+    display: flex;
+    align-items: flex-end;
+}
+.message__container__text {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px 3px;
+}
+.message__container__time {
+    opacity: 0.8;
+    font-size: 14px;
+}
+.incoming .message__container__text {
+    border-top-left-radius: 0px;
+}
+
+.outgoing {
+    justify-content: flex-end;
+}
+.outgoing .message__container {
+    flex-direction: row-reverse;
+}
+.outgoing .message__container__text {
+    border-top-right-radius: 0px;
+    background-color: yellow;
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: none;
+    }
+}
+/*
+.message-row:nth-child(1) {
+    animation: fromLeft 0.8s ease-in-out;
+    animation-delay: 0.8s;
+}
+.message-row:nth-child(3) {
+    animation: fromLeft 0.8s ease-in-out;
+    animation-delay: 2.4s;
+}
+.message-row:nth-child(5) {
+    animation: fromLeft 0.8s ease-in-out;
+    animation-delay: 4s;
+}
+.message-row:nth-child(2) {
+    animation: fromRight 0.8s ease-in-out;
+    animation-delay: 1.6s;
+}
+.message-row:nth-child(4) {
+    animation: fromRight 0.8s ease-in-out;
+    animation-delay: 3.2s;
+}
+*/
+
+.reply {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.reply__column {
+    text-align: center;
+}
+
+.reply__column:first-child {
+    width: 10%;
+}
+.reply__column:last-child {
+    width: 90%;
+    text-align: end;
+    position: relative;
+}
+.reply__column > input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 17px;
+    padding: 0px 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply__column > i {
+    color: lightgray;
+}
+.reply__column:last-child > svg,
+.reply__column:last-child button {
+    position: absolute;
+    bottom: 7px;
+}
+
+.reply__column:last-child > svg {
+    font: 30px;
+    right: 35px;
+}
+.reply__column:last-child button {
+    right: 5px;
+    bottom: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: yellow;
+}
+
+.reply .reply__column:first-child,
+.reply svg,
+.reply button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within svg,
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply:focus-within input {
+    width: 98vw;
+    transform: translateX(-12vw);
+}

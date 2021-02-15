@@ -1,0 +1,24 @@
+.settings-list {
+    z-index: -10;
+}
+.settings-list__menu {
+    border-bottom: var(--border-component);
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.settings-list__menu__title {
+    margin-left: 10px;
+}
+.settings-list__menu div:first-child {
+    width: 30px;
+    text-align: center;
+}
+
+.settings-list__menu__info {
+    position: absolute;
+    right: 10px;
+    opacity: 0.7;
+}

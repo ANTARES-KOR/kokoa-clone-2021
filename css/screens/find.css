@@ -1,0 +1,49 @@
+.find-screen div {
+    margin: 5px 0px;
+}
+.find-screen h3:first-child {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.find-menu {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 13px;
+    height: 90px;
+    border-bottom: var(--border-component);
+    border-radius: var(--border-radius-value);
+}
+.find-menu__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.keyword {
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border-component);
+    background-color: var(--light-sand-color);
+}
+.keyword__title {
+    width: 100%;
+    font-weight: 600;
+}
+.keyword__content {
+    text-align: center;
+}
+.keyword__content img {
+    width: 340px;
+    height: auto;
+}
+.keyword__content iframe {
+    width: 330px;
+    height: 200px;
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
 @import "./reset.css";
 /* Components */
@@ -10,10 +11,17 @@
 /* Screens */
 @import "./screens/friends.css";
 @import "./screens/login.css";
+@import "./screens/find.css";
+@import "./screens/more.css";
+@import "./screens/settings.css";
+@import "./screens/chattings.css";
 
 :root {
     --sea-color: #39e3f0;
     --sand-color: #fbd997;
+    --light-sand-color: #fdeccb;
+    --border-component: 1px solid rgba(0, 0, 0, 0.3);
+    --border-radius-value: 2px;
 }
 * {
     box-sizing: border-box;
@@ -36,4 +44,26 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+@keyframes hideSplashScreen {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-image: url("../img/login-fom-background1.jpg");
+    background-size: auto 150vh;
+    background-position-y: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    top: 0;
+    animation: hideSplashScreen 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
