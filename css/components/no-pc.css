@@ -27,8 +27,6 @@
         display: none;
     }
 }
-@media (orientation: portrait) {
-    #no-landscape {
-        display: none;
-    }
+#no-landscape {
+    display: none;
 }
